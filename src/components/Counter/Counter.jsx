@@ -18,7 +18,7 @@ function countReducer(state, action) {
     }
     case 'reset': {
       return {
-        count: state.count initialItems,
+        count: 0,
       }
     }
     default: {
@@ -62,18 +62,6 @@ export default function Counter() {
       setCurrentColor(`rgb(239, 68, 68)`)
     }
   }, [state.count])
-
-  // const increment = () => {
-  //   setCount((prevState) => prevState + 1)
-  // }
-
-  // const decrement = () => {
-  //   setCount((prevState) => prevState - 1)
-  // }
-
-  // const reset = () => {
-  //   setCount(0)
-  // }
 
   return (
     <main className="bg-black bg-opacity-90 min-h-screen flex flex-col items-center justify-center text-4xl text-pink-500">
